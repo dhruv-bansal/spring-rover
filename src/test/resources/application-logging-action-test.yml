@@ -1,0 +1,13 @@
+spring:
+  rover:
+    configs:
+      -
+        className: org.techpleid.springframework.insights.actions.integrationtest.testpackage1.beans.TestSimpleBean1
+        methodName: incrementCounter
+        logInputParameters: true
+        logReturnType: true
+      -
+        className: org.techpleid.springframework.insights.actions.integrationtest.testpackage1.*
+        methodName: '*'
+        logInputParameters: true
+        logReturnType: true
